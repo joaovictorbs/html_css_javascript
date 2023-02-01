@@ -2,26 +2,42 @@
 <html>
     <head>
         <meta charset="UTF-8">  <!--declara padrão UTF-8-->
-        <title>Formulario</title>
+        <title>Input</title>
     </head>
     
     <body>
-         <h1>Formulario</h1>
+         <h1>Input</h1>
 
          <form>
-          <label>Input de Texto</label>
-          <input type="text" placeholder="Escreva um texto"><br><br>
+          <input type="password"><br><br> <!--define senhas-->
+          <input type="email"><br><br>  <!--reconhece padrões de e-mail-->
+          <input type="date"><br><br> <!--selecao de datas-->
+          <input type="datetime-local"><br><br> <!--selecao de datas e horas-->
+          <input type="number"><br><br> <!--permite somente números-->
+          <input type="file"><br><br> <!--permite escolher arquivos-->
 
-          <textarea></textarea><br><br>
+          <input type="number" min="0" max="5"><br><br> <!--com mais atributos-->
+
+          <!-- existem muitos outros atributos que o type pode receber -->
+
+
+          <p>Escolha sua linguagem:</p>
+          <input type="radio" name="web">
+          <label>Javascript</label>
+    
+          <input type="radio" checked name="web" id="python"> 
+          <label for="python">Python</label>
+
+          <input type="checkbox" name="web">
+          <label>C++</label>
+
+          <input type="checkbox" name="web">
+          <label>HTML</label><br><br>   <!--permite seleções-->
+
           
-          <select>
-            <option>Escolha...</option>
-            <option>Item 01</option>
-            <option>Item 02</option>
-          </select><br><br>
-          
-          <br>
-          <button>Enviar</button>
+          <input type="text" placeholder="Seu nome" required><br><br> <!--obriga a preencher o campo-->
+
+          <button type="submit">Enviar</button>
          </form>
     </body>
 </html>
