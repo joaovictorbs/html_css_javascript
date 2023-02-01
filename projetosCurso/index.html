@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">  <!--declara padrão UTF-8-->
-        <title>Input</title>
+        <meta charset="UTF-8">
+        <title>Tabela</title>
+
+        <style>
+            th, td {
+                border: 1px solid #000;
+                padding: 5px;
+                border-radius: 4px;
+            }
+        </style>
     </head>
     
     <body>
-         <h1>Input</h1>
+         <h1>Tabela</h1>
 
-         <form>
-          <input type="password"><br><br> <!--define senhas-->
-          <input type="email"><br><br>  <!--reconhece padrões de e-mail-->
-          <input type="date"><br><br> <!--selecao de datas-->
-          <input type="datetime-local"><br><br> <!--selecao de datas e horas-->
-          <input type="number"><br><br> <!--permite somente números-->
-          <input type="file"><br><br> <!--permite escolher arquivos-->
+         <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>País</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Chico</td>
+                    <td>18</td>
+                    <td>Brasil</td>
+                </tr>
 
-          <input type="number" min="0" max="5"><br><br> <!--com mais atributos-->
+                <tr>
+                    <td>Maria</td>
+                    <td>17</td>
+                    <td>Brasil</td>
+                </tr>
 
-          <!-- existem muitos outros atributos que o type pode receber -->
+                <tr>
+                    <td>Pedro</td>
+                    <td>41</td>
+                    <td>Portugal</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Total de Pessoas:</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+
+         </table>
 
 
-          <p>Escolha sua linguagem:</p>
-          <input type="radio" name="web">
-          <label>Javascript</label>
-    
-          <input type="radio" checked name="web" id="python"> 
-          <label for="python">Python</label>
-
-          <input type="checkbox" name="web">
-          <label>C++</label>
-
-          <input type="checkbox" name="web">
-          <label>HTML</label><br><br>   <!--permite seleções-->
-
-          
-          <input type="text" placeholder="Seu nome" required><br><br> <!--obriga a preencher o campo-->
-
-          <button type="submit">Enviar</button>
-         </form>
     </body>
 </html>
