@@ -1,9 +1,12 @@
-p {
-    color: #f33;
+.red {
+    background-color: #f33;
 
-    font-size: 50px;
-    font-family: sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    font-variant: small-caps;
+    width: 100px;
+    height: 100px;
+}
+.gray {
+    background-color: #555;
+
+    width: 200px;
+    height: 300px;
 }
