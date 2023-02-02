@@ -1,15 +1,10 @@
-.red {
-    border: 5px dashed #f33;
-    border-radius: 20px;
+div {
+    width: 100%;
+    height: 500px;
 
-    width: 100px;
-    height: 100px;
-}
-
-.gray {
-    border: 5px double #555;
-
-
-    width: 200px;
-    height: 300px;
+    background-color: #333;
+    background-image: url(./js.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
 }
