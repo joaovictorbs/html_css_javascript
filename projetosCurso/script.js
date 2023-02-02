@@ -1,0 +1,1 @@
+alert('Olá :)') //aplica a função alert e uma mensagem
