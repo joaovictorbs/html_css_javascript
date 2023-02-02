@@ -1,12 +1,12 @@
-.red {
-    background-color: #f33;
-
-    width: 100px;
-    height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.gray {
-    background-color: #555;
 
-    width: 200px;
-    height: 300px;
+div {
+    width: 100vw;
+    height: 150vh;
+
+    background: #333;
 }
