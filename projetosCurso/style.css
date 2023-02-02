@@ -1,7 +1,14 @@
-h1{
-    color: #f33;     /*seletor{
-                            propriedade: valor
-                        }*/
-    font-size: 50px;
+#blue {
+    background: blue;
+}
 
+div {
+    width: 200px;
+    height: 200px;
+
+    background: red !important;
+}
+
+.green {
+    background: green;
 }
