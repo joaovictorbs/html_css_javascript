@@ -1,12 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html{
+    font-size: 10px;
 }
 
-div {
-    width: 100vw;
-    height: 150vh;
+#pai {
+    width: 500px;
+    height: 150px;
+    padding: 2em;
 
-    background: #333;
+    background: #ddd;
+    font-size: 15px;
 }
+
+#filho {
+    font-size: 3em;
+    margin-top: 3em;
+}
+
+/* em, rem, px, %, vw, vh */    
