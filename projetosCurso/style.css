@@ -1,19 +1,15 @@
-html{
-    font-size: 10px;
+.red {
+    border: 5px dashed #f33;
+    border-radius: 20px;
+
+    width: 100px;
+    height: 100px;
 }
 
-#pai {
-    width: 500px;
-    height: 150px;
-    padding: 2em;
+.gray {
+    border: 5px double #555;
 
-    background: #ddd;
-    font-size: 15px;
+
+    width: 200px;
+    height: 300px;
 }
-
-#filho {
-    font-size: 3em;
-    margin-top: 3em;
-}
-
-/* em, rem, px, %, vw, vh */    
