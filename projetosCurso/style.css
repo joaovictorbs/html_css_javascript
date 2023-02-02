@@ -1,8 +1,7 @@
-body{
-    background-color: #333;  /*altera a cor do fundo*/
-}
-
 h1{
-    color: #fff;               /*altera a cor do h1*/
-    font-family: sans-serif;    /*altera a fonte do h1*/
+    color: #f33;     /*seletor{
+                            propriedade: valor
+                        }*/
+    font-size: 50px;
+
 }
