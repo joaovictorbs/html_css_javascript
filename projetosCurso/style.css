@@ -1,33 +1,13 @@
-form {
-    width: 500px;
-    height: 150px;
-    padding: 2em;
+div {
+    width: 200px;
+    height: 200px;
 
-    background: #e2e2e2;
+    background: #f33;
+    opacity: 0.8;
+    /* box-shadow: 5px 5px 4px #333; */
 }
 
-input {
-    outline: 0;
-    padding: 6px;
-}
+/* HEADER ============= */
 
-input:not([type="email"]) {
-    border: 2px solid #f33
-}
 
-input[type="email"] {
-    border: 2px solid blue;
-    border-radius: 20px;
-}
-
-ul li:first-child {
-    color: green;
-}
-
-ul li:last-child {
-    color: #f33;
-}
-
-ul li:nth-child(3) {
-    color: deeppink;
-}
+/* FOOTER ============= */
