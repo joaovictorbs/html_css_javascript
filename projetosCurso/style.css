@@ -1,27 +1,17 @@
-h2 {
-    margin-top: 25px;
-}
-
 div {
-    margin-bottom: 50px;
+    width: 100%;
+    height: 150px;
+
+    background: #f33;
+    /* bottom: 0; */
+    /* position: relative; */
+    /* position: fixed; */
+
 }
 
-.none {
-    display: none;
-}
-
-.inline{
-    display: inline;
-}
-
-.block{
-    display: block;
-}
-
-.inline-block{
-    display: inline-block;
-}
-
-span {
-    display: block;
+.blue {
+    background: blue;
+    top: 250px;
+    right: 200px;
+    position: absolute;
 }
