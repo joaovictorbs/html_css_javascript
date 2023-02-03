@@ -1,28 +1,12 @@
-:root {
-    --corTexto: green;
-    --fonteTitulo: 3em;
-    --corDiv: #555;
-    --p10: 10px;
-    --m10: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-div {
-    width: 250px;
-    height: 250px;
-
-    background: var(--corDiv);
-    margin-top: var(--m10)
-}
-
-p {
-    color: var(--corTexto);
-}
-
-h1 {
-    color: #f33;
-    font-size: var(--fonteTitulo);
-}
-
-.box-01 {
-    padding: var(--p10);
+.red {
+    background-color: #f33;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
 }
