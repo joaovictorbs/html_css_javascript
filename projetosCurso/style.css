@@ -1,13 +1,28 @@
-div {
-    width: 200px;
-    height: 200px;
-
-    background: #f33;
-    opacity: 0.8;
-    /* box-shadow: 5px 5px 4px #333; */
+:root {
+    --corTexto: green;
+    --fonteTitulo: 3em;
+    --corDiv: #555;
+    --p10: 10px;
+    --m10: 10px;
 }
 
-/* HEADER ============= */
+div {
+    width: 250px;
+    height: 250px;
 
+    background: var(--corDiv);
+    margin-top: var(--m10)
+}
 
-/* FOOTER ============= */
+p {
+    color: var(--corTexto);
+}
+
+h1 {
+    color: #f33;
+    font-size: var(--fonteTitulo);
+}
+
+.box-01 {
+    padding: var(--p10);
+}
