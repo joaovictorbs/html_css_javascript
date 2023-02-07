@@ -5,13 +5,48 @@
         <title>Flexbox</title>
         <link rel="stylesheet" href="./style.css">
     </head>
-    <body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: #fff;
+        }
 
-        <div class="container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-        </div>
+        body {
+            background-color: #3d3d3d;
+        }
+
+        nav a {
+            margin-right: 12px;
+        }
+
+        button{
+            border: 0;
+            outline: 0;
+            padding: 10px;
+            border-radius: 6px;
+            color: #3d3d3d;
+        }
+    </style>
+    <body>
+        <header>
+            <h1>Logo</h1>
+
+            <div>
+                
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#">Perfil</a>
+                    <a href="#">Sobre</a>
+                </nav>
+
+                <button>Login</button>
+                <button>Cadastrar</button>
+            </div>
+        </header>
 
     </body>
 </html>
