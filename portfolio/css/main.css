@@ -21,10 +21,11 @@ main .main-content .text {
     margin-bottom: 10%;
 }
 
-main .main-content p {
+main .main-content .text p {
     width: 75%;         /*evita do p ir até o final da pagina*/
     font-size: 1.2em;
     font-weight: 300;
+    line-height: 1.6;
 }
 
 /* CARDS ======================= */
@@ -40,7 +41,8 @@ main .techs .cards-container .card {
     padding: 10px;
     background-color: #eee;
     border-radius: 8px;
-    margin-right: 1.8em;
+    margin-right: 0.9em;
+    margin-left: 0.9em;
     cursor: pointer;
 
     display: flex;

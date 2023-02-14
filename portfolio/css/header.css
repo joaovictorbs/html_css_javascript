@@ -1,8 +1,8 @@
 header {
     background-color: #222;
     padding: 25px;
-    display: flex;
 
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -25,9 +25,9 @@ header nav a {
 
 header h1, a {
     color: #00e0ff;
+    transition: 0.2s ease-in-out;
 }
 
 header h1:hover, a:hover {
- color:  #ffff;
- transition: 0.2s ease-in-out;
+    color:  #ffff;
 }
