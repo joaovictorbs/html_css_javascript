@@ -1,11 +1,6 @@
-var nome = 'João';
+var contador = 0;
 
-if(nome == 'João'){
-    console.log('Olá João')
-}
-else if(nome == 'Maria') {
-    console.log('Olá Maria');
-}
-else {
-    console.log('Olá Convidado')
+while (contador <= 10){
+    console.log(contador);
+    contador++;
 }
