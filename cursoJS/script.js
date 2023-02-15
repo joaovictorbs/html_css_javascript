@@ -1,6 +1,3 @@
-var contador = 0;
-
-while (contador <= 10){
-    console.log(contador);
-    contador++;
+for (i = 0; i <= 12; i++){
+    console.log(i)
 }
