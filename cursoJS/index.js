@@ -1,13 +1,8 @@
+const texto = document.getElementsByName('text');
+const span = document.getElementsByTagName('span');
 
-const nome = prompt('Digite o seu nome: ');
-alert('Olá ' + nome);
+console.log(texto[0]);  //acessa indice de elementos
+console.log(texto[0].tagName);  //descobre nome do elemento
 
-const status = confirm('Deseja deletar sua conta?');
-
-console.log(status);
-if (!status) {
-    alert('Obrigado por continuar conosco ' + nome);
-}
-else {
-    alert('Adeus ' + nome);
-}
+console.log(span);
+span[1].innerHTML = 'Olá Mundo!';   //altera elemento
