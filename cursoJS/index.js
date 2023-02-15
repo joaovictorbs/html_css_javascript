@@ -1,7 +1,7 @@
-const text = document.querySelector('p');
+var nome = 'Joao';
 
-text.innerHTML = 'Olá Mundo!';
-text.style.color = '#f33';
-console.log(text);
-
-
+console.log('Olá! Seja bem vindo ' + nome);
+console.log({ nome });
+window.console.log('nao altera');
+console.error('Erro!');
+console.warn('Atenção!');
