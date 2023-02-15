@@ -1,15 +1,13 @@
-console.log('Adição (+):', 2 + 2);
-console.log('Subtração (-):', 8 - 3);
-console.log('Divisão (/):', 12 / 2);
-console.log('Multiplicação (*):', 5 * 8);
-console.log('Módulo (%):', 10 % 2);
+var animal = 'gato';
+var idade = 6;
+var num = undefined;
 
-var valor = 10;
-console.log('Incremento (++):', ++valor);
-console.log(valor);
+console.log(animal == 'gato' || animal == 'cao');
+console.log(animal == 'gato' && idade == 5);
+console.log(!num);
 
-valor = 10
-console.log('Decremento (---):', valor--);
-console.log(valor);
 
-console.log('Exponenciação (**):', 2 ** 3);
+// igual    - ==
+// ou       - || 
+// e        - &&
+// negação  - !
