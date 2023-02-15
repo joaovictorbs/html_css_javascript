@@ -1,7 +1,13 @@
-var nome = 'Joao';
 
-console.log('Olá! Seja bem vindo ' + nome);
-console.log({ nome });
-window.console.log('nao altera');
-console.error('Erro!');
-console.warn('Atenção!');
+const nome = prompt('Digite o seu nome: ');
+alert('Olá ' + nome);
+
+const status = confirm('Deseja deletar sua conta?');
+
+console.log(status);
+if (!status) {
+    alert('Obrigado por continuar conosco ' + nome);
+}
+else {
+    alert('Adeus ' + nome);
+}
