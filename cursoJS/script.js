@@ -1,15 +1,11 @@
-var num = 18;
-var idade = '18';
+var nome = 'João';
 
-console.log(num == idade);
-console.log(num === idade);
-
-if(idade === num) {
-    console.log('É estritamente igual!');
+if(nome == 'João'){
+    console.log('Olá João')
 }
-else if(idade == num) {
-    console.log('É igual!');
+else if(nome == 'Maria') {
+    console.log('Olá Maria');
 }
 else {
-    console.log('Não é igual!');
+    console.log('Olá Convidado')
 }
