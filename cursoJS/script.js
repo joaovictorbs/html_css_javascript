@@ -1,3 +1,5 @@
-var nome = 'joao';
-var idade = '20';
-console.log('Meu nome é', nome.concat(' e eu tenho ', idade, ' anos :)'))
+const mostraNome = function(nome) {
+    return 'meu nome é ' + nome
+}
+
+console.log(mostraNome('João'));
