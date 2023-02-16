@@ -1,8 +1,4 @@
-const texto = document.getElementsByName('text');
-const span = document.getElementsByTagName('span');
+const texto = document.getElementById('text');
+const content = 'Hello World!';
 
-console.log(texto[0]);  //acessa indice de elementos
-console.log(texto[0].tagName);  //descobre nome do elemento
-
-console.log(span);
-span[1].innerHTML = 'Olá Mundo!';   //altera elemento
+texto.innerHTML = content;  //atribui variavel content a variavel texto
