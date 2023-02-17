@@ -1,10 +1,9 @@
 const texto = document.getElementById('text');
+const container = document.getElementById('container');
 
-texto.classList.add('blue');    // adiciona a classe blue ao elemento
-texto.classList.remove('texto'); //remove classe do elemento
-texto.classList.remove('blue'); //remove classe do elemento
-texto.classList.add('red'); //remove classe do elemento
+texto.style.color= '#f33';
+texto.style.fontSize = '1.5em';
 
-if (texto.classList.contains('red')) {  //verifica se elemento contém classe
-    alert('Elemento contém classe Red');
-}
+container.style.width = '100px';
+container.style.height = '100px';
+container.style.backgroundColor = '#444';
