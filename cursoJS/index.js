@@ -1,9 +1,11 @@
-function saudacoes(){
-    alert('Olá :)');
+function trocarTexto(){
+    text = document.querySelector('h1');
+
+    text.innerHTML = 'Olá ;)';
 }
 
-function mostraCaixa(){
-    const caixa = document.getElementById('caixa');
+function textoTroca(){
+    text = document.querySelector('h1');
 
-    caixa.style.display = 'block';
+    text.innerHTML = 'Alo ;)';
 }
