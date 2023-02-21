@@ -25,10 +25,14 @@ function converter() {
     if(selectedCurrency.value === 'eur'){
         valueConverted = inputValue.value / 5.52;
         result.innerHTML = valueFormatter('pt-br', 'EUR');  //funcao de formatar
+
+        animateResult();
     }
     else {
         valueConverted = inputValue.value / 5.17;
         result.innerHTML = valueFormatter('en-US', 'USD');
+
+        animateResult();
     }
 
     inputValue.value = '';          //zera as informacoes para mais testes
@@ -40,4 +44,11 @@ function valueFormatter(locale, currency) {    //locale e o tipo de moeda do pai
                                                // currency a moeda que iremos fazer uso
     const value = valueConverted.toLocaleString(`${locale}`, { style: 'currency', currency: `${currency}` }); //locale e opcoes, como o estilo moeda e tipo de formatacao
     return `<span>🤑</span> ${value} <span>🤑</span>`;           //template string ``
+}
+
+function animateResult() {
+    return result.animate([
+      { transform: 'translateY(-150px)'},       //vai do -150
+      { transform: 'translateY(0px)'}           // ao 0 px
+    ], { duration: 500 });                      // em 500 milisegundos
 }
