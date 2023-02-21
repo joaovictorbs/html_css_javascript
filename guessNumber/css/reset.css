@@ -1,0 +1,26 @@
+:root {     /*raiz = elemento <html>*/
+    --white: #fafafa;   /*variavel*/
+    --blue: #00348A;
+    --blue-light: #0BBBD6;
+}
+
+* {     /*reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+
+    display: flex;              /*separa header, main e footer*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
