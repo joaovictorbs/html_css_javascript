@@ -2,6 +2,8 @@
     --white: #fafafa;   /*variavel*/
     --blue: #00348A;
     --blue-light: #0BBBD6;
+    --green: #37C978;
+    --red: #DE4251
 }
 
 * {     /*reset*/
