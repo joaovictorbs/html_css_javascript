@@ -7,16 +7,49 @@
     <title>GoTasks</title>
     <!-- CSS -->
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/9b08bcd420.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <header>
-        <h1><a href="#">GoTasks></a></h1>
+        <h1><a href="#">GoTasks</a></h1>
     </header>
 
-    <main>
+    <main class="container">
+        <header class="main-header">
+            <button class="btn-new-task">Nova tarefa</button>
+            
+            <span>
+                <span id="count-tasks">0</span> Tarefas registradas
+            </span>
+        </header>
+
         
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="table">   <!--futuras tarefas-->
+                <td>teste1</td>
+                <td>teste2</td>
+                <td>
+                    <a href="#">
+                        <i class="fa-solid fa-trash"></i>
+                        <!-- <i class="fa-solid fa-trash-clock"></i> -->
+                    </a>
+                </td>
+            </tbody>
+        </table>
+
+        <span></span>
     </main>
 
     <footer>
@@ -24,5 +57,5 @@
     </footer>
 
 </body>
-<script src="./js/index.js"></script>
+<!-- <script src="./js/index.js"></script> -->
 </html>
