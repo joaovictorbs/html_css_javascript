@@ -19,8 +19,8 @@ const GuessNumber = {   //objeto
     clearInput: function() {
         inputValue.value = '';
     },
-    updateAttempt: function(attempt, value){
-        attempt.innerHTML = 'Tentativa: ' + value;
+    updateAttempt: function(value){
+        attempt.innerHTML = value;
     },
     correctAnswear: function() {
         this.showButtonRestart();  //metodo dentro da funcao usa this.
@@ -54,7 +54,7 @@ function handleSubmit(e) {   //recebe evento
         return;
     }
 
-    GuessNumber.updateAttempt(attempt, ++GuessNumber.attemptsNumber)
+    GuessNumber.updateAttempt(++GuessNumber.attemptsNumber)
 
     if(numberDraw == kick) {   
         GuessNumber.correctAnswear();
