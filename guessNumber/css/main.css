@@ -78,7 +78,7 @@
 }
 
 /* BUTTON ======== */
-.container #btnRestart {
+.container #btn-restart {
     cursor: pointer;
     background: var(--blue);
     color: var(--white);
@@ -91,7 +91,7 @@
     display: none;  /* so aparece no resultado*/
 }
 
-.container #btnRestart:hover {
+.container #btn-restart:hover {
     background: var(--white);
     color: var(--blue);
 }
