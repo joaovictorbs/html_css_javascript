@@ -26,11 +26,13 @@ function createTask(e) {             //recebe evento = estado atual de tudo
     }
 
     localStorage.setItem('@GoTask', JSON.stringify( [ newTask ]));
+
+    toggleModal();
+    clearFields()
 }
 
 function toggleModal() {                        //abre e fecha para informar nova tarefa
     modal.classList.toggle('modal-visible');   //funcao verifica se elemento possui classe, se nao tem adiciona, se tem remove
-    clearFields();
 }
 
 function clearFields() {                //zera os valores do formulario quando fecha
