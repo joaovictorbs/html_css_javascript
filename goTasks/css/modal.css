@@ -80,3 +80,11 @@
 .buttons-modal .btn-save:hover {
     background-color: #186441;
 }
+
+.modal-background.modal-visible {  /*se elemento tiver a classe modal-background e modal-visible*/
+    display: flex;
+}
+
+
+
+
