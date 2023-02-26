@@ -1,7 +1,8 @@
-const modal = document.getElementById('modal');
 const inputDescription = document.getElementById('description');
 const inputDate = document.getElementById('date');
 const btnCreateTask = document.getElementById('btn-create-task');
+const modal = document.getElementById('modal');
+const alertElement = document.getElementById('alert');
 
 
 // MODAL========
@@ -9,7 +10,8 @@ function createTask(e) {             //recebe evento = estado atual de tudo
     e.preventDefault(e)             //evita que aconteca o funcionamento padrao, tela não recarrega
 
     if(!inputDescription.value || !inputDate.value) {
-        alert('Preencha todos os campos');
+        alertElement.style.display = 'block';
+        closeAlert();
         return
     }
 
@@ -36,5 +38,12 @@ function clearFields() {                //zera os valores do formulario quando f
     inputDescription.value = ''; 
     inputDate.value = ''
 }
+
+function closeAlert() {
+    setTimeout(() => {  //realiza porcao de codigo depois de certo tempo
+        alertElement.style.display = 'none';
+    }, 3000)         //o tempo e em milisegundos
+}
+
 
 btnCreateTask.addEventListener('click', createTask);
