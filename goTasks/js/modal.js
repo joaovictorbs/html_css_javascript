@@ -21,8 +21,9 @@ function createTask(e) {             //recebe evento = estado atual de tudo
 
     const allTasks = getTasks();                                //recupera informacoes do localStorage
 
-    localStorage.setItem('@GoTasks', JSON.stringify( [ ...allTasks, newTask ]));     //tudo que tiver no localStorage salva antes da nova tarefa
+    setTasks([...allTasks, newTask]);
 
+    reload();
     toggleModal();
     clearFields()
 }
