@@ -19,9 +19,9 @@ function createTask(e) {             //recebe evento = estado atual de tudo
         id: Math.floor(Math.random() * 10000)                   //numero aleatorio entre 0 e 10000, e arredondado   
     }
 
-    const allTasks = loadTask();                                //recupera informacoes do localStorage
+    const allTasks = getTasks();                                //recupera informacoes do localStorage
 
-    localStorage.setItem('@GoTask', JSON.stringify( [ ...allTasks, newTask ]));     //tudo que tiver no localStorage salva antes da nova tarefa
+    localStorage.setItem('@GoTasks', JSON.stringify( [ ...allTasks, newTask ]));     //tudo que tiver no localStorage salva antes da nova tarefa
 
     toggleModal();
     clearFields()

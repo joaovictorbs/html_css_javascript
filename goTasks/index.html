@@ -18,7 +18,7 @@
     <!-- ICONS -->
     <script src="https://kit.fontawesome.com/9b08bcd420.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="fillTable()">
 
     <header class="header">
         <h1><a href="#">GoTasks</a></h1>
@@ -42,7 +42,7 @@
                     <th>Ações</th>
                 </tr>
             </thead>
-            <tbody id="table"></tbody>   <!--futuras tarefas--> 
+            <tbody id="table-body"></tbody>   <!--futuras tarefas--> 
         </table>
 
         <h3 id="loading-message">Carregando...</h3> <!--muda a mensagem com o javascript-->
