@@ -1,26 +1,10 @@
-const table = document.getElementById('table-body');
 const modal = document.getElementById('modal');
-const form = document.getElementById('form');
 const inputDescription = document.getElementById('description');
 const inputDate = document.getElementById('date');
-const loadingMessage = document.getElementById('loading-message');
-const countTasks = document.getElementById('count-tasks');
 const btnCreateTask = document.getElementById('btn-create-task');
 
-function loadTask() {
-    const tasks = JSON.parse(localStorage.getItem('@GoTask')) || []; //recupera informacao do localStorage e formata string para objeto
-    return tasks;                                                   //caso nao tenha a informacao, a informacao vem vazia
-}                                                                   
-
-function updateCountTasks() {
-    const allTasks = loadTask();
-    countTasks.innerHTML = allTasks.length;
-}
 
 // MODAL========
-btnCreateTask.addEventListener('click', createTask);
-
-
 function createTask(e) {             //recebe evento = estado atual de tudo
     e.preventDefault(e)             //evita que aconteca o funcionamento padrao, tela não recarrega
 
@@ -51,3 +35,5 @@ function clearFields() {                //zera os valores do formulario quando f
     inputDescription.value = ''; 
     inputDate.value = ''
 }
+
+btnCreateTask.addEventListener('click', createTask);
