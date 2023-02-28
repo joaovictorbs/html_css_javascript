@@ -26,8 +26,9 @@ function createTask(e) {             //recebe evento = estado atual de tudo
     setTasks([...allTasks, newTask]);
 
     reload();
+    updateCountTasks();
     toggleModal();
-    clearFields()
+    clearFields();
 }
 
 function toggleModal() {                        //abre e fecha para informar nova tarefa

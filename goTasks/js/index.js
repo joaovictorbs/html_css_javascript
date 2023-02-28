@@ -13,7 +13,7 @@ function fillTable() {      //preenche tabela
         loadingMessage.innerHTML = "";
     }
 
-    updateCountTasks(); //atualiza contador
+    updateCountTasks();
 }
 
 function addTask(task) {    //cria tarefa no HTML
@@ -21,6 +21,11 @@ function addTask(task) {    //cria tarefa no HTML
     tr.innerHTML = innerHTMLTasks(task); //recebe os <td>
 
     table.appendChild(tr);   //adiciona elemento filho no table-body
+}
+
+function updateCountTasks() {
+    const allTasks = getTasks();
+    countTasks.innerHTML = allTasks.length;
 }
 
 function innerHTMLTasks(task) {   //recebe uma tarefa e constroi estrutura de registro
