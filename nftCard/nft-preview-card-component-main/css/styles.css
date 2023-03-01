@@ -112,3 +112,26 @@ footer.main-footer span.name {
 footer.main-footer span.name:hover {
     color: var(--cyan);
 }
+
+
+/* FOOTER CHALLENGE */
+
+.footer-challenge {
+    width: 100%;
+    background-color: var(--cardBg);
+    color: var(--softBlue);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-challenge span {
+    cursor: pointer;
+    transition: 0.15s ease-in;;
+}
+
+.footer-challenge span a:hover {
+    color: var(--cyan);
+}

@@ -15,3 +15,8 @@
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
+
+a {
+    color: var(--white);    
+    text-decoration: none;
+}
