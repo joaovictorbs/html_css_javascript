@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    max-width: 75vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* TEXTS ========= */
+.texts {
+    width: 100%;
+    max-width: 500px;
+}
+
+.texts h1 {
+    font-size: 3em;
+    margin-bottom: 24px;
+}
+
+/* FORM ========== */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-message {
+    background-color: var(--blue);
+    color: #fff;
+    padding: 24px 8px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    /*quebra o elemento dependendo da tela*/
+}
+
+.subscribe-message strong{
+    margin-right: 5px;
+}
