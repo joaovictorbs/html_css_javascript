@@ -4,12 +4,12 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const inputsElements = [firstName, lastName, password];
 
-inputsElements.forEach((element) => addEventInElements(element));
+inputsElements.forEach(function (input){
+    validateEmptyFields(input);
+});
 
-function addEventInElements(element){
-    element.addEventListener('blur', function() {      //quando sai do input acontece o evento de blur
-        if(!element.value || element.value.length < 3){
-            alert('AOBAAAA');
-        }
-    });
-}
+email.addEventListener('blur', function() {
+    isEmailValid(email);
+});
+
+
