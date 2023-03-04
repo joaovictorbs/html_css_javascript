@@ -4,12 +4,15 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const inputsElements = [firstName, lastName, password];
 
-inputsElements.forEach(function (input){
-    validateEmptyFields(input);
-});
+function initApp(){    
+    inputsElements.forEach(function (input){
+        validateEmptyFields(input);
+    });
 
-email.addEventListener('blur', function() {
-    isEmailValid(email);
-});
+    email.addEventListener('blur', function() {
+        isEmailValid(email);
+    });
+}
 
 
+initApp();   
