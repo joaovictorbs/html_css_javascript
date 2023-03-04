@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Formulário</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        
+        <title>Frontend Mentor | Formulário</title>
 
-  <!-- CSS  -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- JS -->
-  <script src="https://kit.fontawesome.com/9b08bcd420.js" crossorigin="anonymous"></script>
+        <!-- CSS  -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- JS -->
+        <script src="https://kit.fontawesome.com/9b08bcd420.js" crossorigin="anonymous"></script>
+        <script src="./js/index.js" defer></script>
+    </head>
+    <body>
 
-</head>
-<body>
+        <main class="container">
+            <section class="texts">
+                <h1>Learn to code by watching others</h1>
+                <p>
+                    See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+                    but understanding how developers think is invaluable. 
+                </p>
+            </section>
 
-    <main class="container">
-        <section class="texts">
-            <h1>Learn to code by watching others</h1>
-            <p>
-                See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-                but understanding how developers think is invaluable. 
+            <section class="form-container">
+                <div class="subscribe-message">
+                    <strong>Try it free 7 days</strong><span>then $20/mo. thereafter</span>
+                </div>
+
+                <form>
+                    
+                    <div class="form-group">
+                        <input type="text" id="firstName" placeholder="First Name">
+                        
+                        <div class="infos-error"> <!--div de erro-->
+                            <i class="fa-solid fa-exclamation icon-error"></i>
+                            <span class="msg-error">Error</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="lastName" placeholder="Last Name">
+                        
+                        <div class="infos-error"> <!--div de erro-->
+                            <i class="fa-solid fa-exclamation icon-error"></i>
+                            <span class="msg-error">Error</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="E-mail">
+                        
+                        <div class="infos-error"> <!--div de erro-->
+                            <i class="fa-solid fa-exclamation icon-error"></i>
+                            <span class="msg-error">Error</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="password" placeholder="Password">
+                        
+                        <div class="infos-error"> <!--div de erro-->
+                            <i class="fa-solid fa-exclamation icon-error"></i>
+                            <span class="msg-error">Error</span>
+                        </div>
+                    </div>
+
+                    <button id="btn-submit">
+                        Claim your free trial
+                    </button>
+
+                    <span class="term-message">
+                        By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+                    </span>
+                </form>
+            </section>
+        </main>
+
+
+        <!-- <footer>
+            <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="#">Your Name Here</a>.
             </p>
-        </section>
+        </footer> -->
 
-        <section class="form-container">
-            <div class="subscribe-message">
-                <strong>Try it free 7 days</strong><span>then $20/mo. thereafter</span>
-            </div>
-
-            <form>
-                
-                <div class="form-group">
-                    <input type="text" id="firstname" placeholder="First Name">
-                    
-                    <div class="infos-error"> <!--div de erro-->
-                        <i class="fa-solid fa-exclamation icon-error"></i>
-                        <span class="msg-error">Error</span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" id="lastName" placeholder="Last Name">
-                    
-                    <div class="infos-error"> <!--div de erro-->
-                        <i class="fa-solid fa-exclamation icon-error"></i>
-                        <span class="msg-error">Error</span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="email" id="email" placeholder="E-mail">
-                    
-                    <div class="infos-error"> <!--div de erro-->
-                        <i class="fa-solid fa-exclamation icon-error"></i>
-                        <span class="msg-error">Error</span>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <input type="password" id="password" placeholder="Password">
-                    
-                    <div class="infos-error"> <!--div de erro-->
-                        <i class="fa-solid fa-exclamation icon-error"></i>
-                        <span class="msg-error">Error</span>
-                    </div>
-                </div>
-
-                <button id="btn-submit">
-                    Claim your free trial
-                </button>
-
-                <span class="term-message">
-                    By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
-                </span>
-            </form>
-        </section>
-    </main>
-
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
-</body>
-<script src="./js/"></script>
+    </body>
 </html>
