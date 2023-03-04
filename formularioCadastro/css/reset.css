@@ -36,3 +36,9 @@ input, button {
 input {
     padding: 0 24px;
 }
+
+a {
+    text-decoration: none;
+    color: var(--darkGreen);
+    font-weight: 700;
+}

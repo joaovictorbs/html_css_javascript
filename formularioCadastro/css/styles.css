@@ -135,3 +135,16 @@ form button:hover {
     color: var(--red);
     font: 700;
 }
+
+footer {
+    width: 100%;
+    background-color: var(--blue);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .attribution {
+    color: #fff;
+}
